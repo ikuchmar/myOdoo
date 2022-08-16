@@ -1,0 +1,2 @@
+# myOdoo
+myOdooApps
