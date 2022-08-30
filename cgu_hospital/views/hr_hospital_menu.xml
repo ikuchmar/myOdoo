@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- actions opening views on models -->
+
+    <record id="action_window_patients" model="ir.actions.act_window">
+        <field name="name">Patients</field>
+        <field name="res_model">hr_hospital.patient</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <record id="action_window_doctors" model="ir.actions.act_window">
+        <field name="name">Doctors</field>
+        <field name="res_model">hr_hospital.doctor</field>
+        <field name="view_mode">tree,kanban,form</field>
+    </record>
+
+    <record id="action_window_sick" model="ir.actions.act_window">
+        <field name="name">Sicks</field>
+        <field name="res_model">hr_hospital.sick</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_window_sick_type" model="ir.actions.act_window">
+        <field name="name">Sicks type</field>
+        <field name="res_model">hr_hospital.sick.type</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_window_diagnosis" model="ir.actions.act_window">
+        <field name="name">Diagnosis</field>
+        <field name="res_model">hr_hospital.diagnosis</field>
+        <field name="view_mode">tree,pivot,graph,form</field>
+    </record>
+
+    <record id="action_window_personal_doctor_history" model="ir.actions.act_window">
+        <field name="name">personal_doctor_history</field>
+        <field name="res_model">hr_hospital.personal.doctor.history</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_window_visit_to_doctor" model="ir.actions.act_window">
+        <field name="name">visit_to_doctor</field>
+        <field name="res_model">hr_hospital.visit.to.doctor</field>
+        <field name="view_mode">calendar,tree,form</field>
+    </record>
+
+    <record id="action_window_research_type" model="ir.actions.act_window">
+        <field name="name">research_type</field>
+        <field name="res_model">hr_hospital.research.type</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_window_research" model="ir.actions.act_window">
+        <field name="name">research</field>
+        <field name="res_model">hr_hospital.research</field>
+        <field name="view_mode">tree,pivot,form</field>
+    </record>
+
+    <record id="action_window_sample_type" model="ir.actions.act_window">
+        <field name="name">sample_type</field>
+        <field name="res_model">hr_hospital.sample.type</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_window_sample" model="ir.actions.act_window">
+        <field name="name">sample</field>
+        <field name="res_model">hr_hospital.sample</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+     <record id="action_window_set_doctor_wizard" model="ir.actions.act_window">
+        <field name="name">set_doctor_wizard</field>
+        <field name="res_model">hr_hospital.set.doctor.wizard</field>
+        <field name="view_mode">form</field>
+    </record>
+
+    <!-- Top menu item -->
+    <menuitem id="hr_hospital.menu_root" name="Hospital"/>
+
+    <!-- menu categories -->
+    <!--        <menuitem name="Patients" id="hr_hospital.patients" parent="hr_hospital.menu_root"/>-->
+    <!--        <menuitem name="Doctors" id="hr_hospital.doctors" parent="hr_hospital.menu_root"/>-->
+
+    <!-- actions -->
+    <menuitem id="hr_hospital.patients" name="Patients" parent="hr_hospital.menu_root"
+              action="hr_hospital.action_window_patients"/>
+
+    <menuitem id="hr_hospital.doctors" name="Doctors" parent="hr_hospital.menu_root"
+              action="hr_hospital.action_window_doctors"/>
+
+    <menuitem id="hr_hospital.sick" name="Sicks" parent="hr_hospital.menu_root"
+              action="hr_hospital.action_window_sick"/>
+
+   <menuitem id="hr_hospital.sick_type" name="Sick types" parent="hr_hospital.menu_root"
+              action="hr_hospital.action_window_sick_type"/>
+
+    <menuitem id="hr_hospital.diagnosis" name="diagnosis" parent="hr_hospital.menu_root"
+              action="hr_hospital.action_window_diagnosis"/>
+
+    <menuitem id="hr_hospital.personal_doctor_history" name="personal_doctor_history" parent="hr_hospital.menu_root"
+              action="hr_hospital.action_window_personal_doctor_history"/>
+
+    <menuitem id="hr_hospital.visit_to_doctor" name="visit_to_doctor" parent="hr_hospital.menu_root"
+              action="hr_hospital.action_window_visit_to_doctor"/>
+
+    <menuitem id="hr_hospital.research_type" name="research_type" parent="hr_hospital.menu_root"
+              action="hr_hospital.action_window_research_type"/>
+
+    <menuitem id="hr_hospital.research" name="research" parent="hr_hospital.menu_root"
+              action="hr_hospital.action_window_research"/>
+
+    <menuitem id="hr_hospital.sample_type" name="sample_type" parent="hr_hospital.menu_root"
+              action="hr_hospital.action_window_sample_type"/>
+
+    <menuitem id="hr_hospital.sample" name="sample" parent="hr_hospital.menu_root"
+              action="hr_hospital.action_window_sample"/>
+
+    <menuitem id="hr_hospital.set_doctor_wizard" name="set_doctor_wizard" parent="hr_hospital.menu_root"
+              action="hr_hospital.action_window_set_doctor_wizard"/>
+
+    <!--        <menuitem name=" Server to list" id="hr_hospital" parent="hr_hospital.menu_2"-->
+    <!--              action="hr_hospital.action_server"/>-->
+
+</odoo>

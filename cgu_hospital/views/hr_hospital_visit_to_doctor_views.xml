@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="visit_to_doctor_list" model="ir.ui.view">
+        <field name="name">visit_to_doctor list</field>
+        <field name="model">hr_hospital.visit.to.doctor</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="date_visit"/>
+                <field name="time_visit"/>
+                <field name="doctor_id"/>
+                <field name="patient_id"/>
+                <field name="diagnosis_id"/>
+                <field name="recommendations"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="visit_to_doctor_calendar" model="ir.ui.view">
+        <field name="name">visit_to_doctor.calendar</field>
+        <field name="model">hr_hospital.visit.to.doctor</field>
+        <field eval="2" name="priority"/>
+        <field name="arch" type="xml">
+            <calendar date_start="date_visit"
+                      string="visits"
+                      mode="month"
+                      color="state">
+                <field name="patient_id"/>
+                <field name="doctor_id"/>
+                <field name="date_visit"/>
+            </calendar>
+        </field>
+    </record>
+
+</odoo>

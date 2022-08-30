@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_cgu_hospital_analysis_direction,cgu_hospital.analysis.direction,model_cgu_hospital_analysis_direction,base.group_user,1,1,1,1
+access_cgu_hospital_analysis_resalt,cgu_hospital.analysis.resalt,model_cgu_hospital_analysis_resalt,base.group_user,1,1,1,1
+access_cgu_hospital_analysis_type,cgu_hospital.analysis.type,model_cgu_hospital_analysis_type,base.group_user,1,1,1,1
+access_cgu_hospital_doctor,cgu_hospital.doctor,model_cgu_hospital_doctor,base.group_user,1,1,1,1
+access_cgu_hospital_doctor_appointment,cgu_hospital.doctor.appointment,model_cgu_hospital_doctor_appointment,base.group_user,1,1,1,1
+access_cgu_hospital_patient,cgu_hospital.patient,model_cgu_hospital_patient,base.group_user,1,1,1,1
+access_cgu_hospital_personal_doctor_history,cgu_hospital.personal.doctor.history,model_cgu_hospital_personal_doctor_history,base.group_user,1,1,1,1
+access_cgu_hospital_specialty,cgu_hospital.cgu_hospital.specialty,model_cgu_hospital_specialty,base.group_user,1,1,1,1
