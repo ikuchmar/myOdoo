@@ -6,4 +6,4 @@ access_cgu_hospital_doctor,cgu_hospital.doctor,model_cgu_hospital_doctor,base.gr
 access_cgu_hospital_doctor_appointment,cgu_hospital.doctor.appointment,model_cgu_hospital_doctor_appointment,base.group_user,1,1,1,1
 access_cgu_hospital_patient,cgu_hospital.patient,model_cgu_hospital_patient,base.group_user,1,1,1,1
 access_cgu_hospital_personal_doctor_history,cgu_hospital.personal.doctor.history,model_cgu_hospital_personal_doctor_history,base.group_user,1,1,1,1
-access_cgu_hospital_specialty,cgu_hospital.cgu_hospital.specialty,model_cgu_hospital_specialty,base.group_user,1,1,1,1
+access_cgu_hospital_speciality,cgu_hospital.cgu_hospital.speciality,model_cgu_hospital_speciality,base.group_user,1,1,1,1

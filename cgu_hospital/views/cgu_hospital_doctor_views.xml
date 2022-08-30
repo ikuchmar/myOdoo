@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_window_doctors" model="ir.actions.act_window">
+        <field name="name">Doctors</field>
+        <field name="res_model">cgu_hospital.doctor</field>
+        <field name="view_mode">tree,kanban,form</field>
+    </record>
+
+    <menuitem id="cgu_hospital.doctors" name="Doctors" parent="cgu_hospital.menu_directories"
+              action="cgu_hospital.action_window_doctors"/>
+
+</odoo>

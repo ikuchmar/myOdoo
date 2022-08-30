@@ -39,4 +39,4 @@ class CGUHospitalDoctorAppointment(models.Model):
 
     @api.onchange('patient_id', 'doctor_id', 'doctor_id', 'date_visit')
     def _onchange_name(self):
-        self.name = f'{self.patient_id.name} | {self.doctor_id.name} ({self.date_visit})'
+        self.name = f'{self.patient_id.name} | {self.doctor_id.name} ({self.date})'

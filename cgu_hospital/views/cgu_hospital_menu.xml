@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Top menu item -->
+    <menuitem id="cgu_hospital.menu_root" name="(CGU) Hospital"/>
+
+    <!-- menu categories -->
+    <menuitem name="Directories" id="cgu_hospital.menu_directories" parent="cgu_hospital.menu_root"/>
+    <menuitem name="Documents" id="cgu_hospital.menu_documents" parent="cgu_hospital.menu_root"/>
+
+
+</odoo>

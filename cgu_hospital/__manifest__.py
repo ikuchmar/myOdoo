@@ -26,12 +26,13 @@
     # always loaded
     'data': [
         'security/ir.model.access.csv',
-        # 'views/hr_hospital_doctor_views.xml',
+        'views/cgu_hospital_menu.xml',
+        'views/cgu_hospital_doctor_views.xml',
+        'views/cgu_hospital_speciality_views.xml',
         # 'views/hr_hospital_patient_views.xml',
         # 'views/hr_hospital_visit_to_doctor_views.xml',
         # 'views/hr_hospital_diagnosis_views.xml',
         #
-        # 'views/hr_hospital_menu.xml',
         # 'views/hr_hospital_sick_views.xml',
         # 'views/hr_hospital_research_views.xml',
         # 'views/hr_hospital_personal_doctor_history_views.xml',
