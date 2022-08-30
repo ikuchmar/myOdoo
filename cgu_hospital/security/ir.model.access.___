@@ -1,0 +1,15 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_hospital_patient,hr_hospital.patient,model_hr_hospital_patient,base.group_user,1,1,1,1
+access_hr_hospital_doctor,hr_hospital.doctor,model_hr_hospital_doctor,base.group_user,1,1,1,1
+access_hr_hospital_contact_person,hr_hospital.contact.person,model_hr_hospital_contact_person,base.group_user,1,1,1,1
+access_hr_hospital_diagnosis,hr_hospital.diagnosis,model_hr_hospital_diagnosis,base.group_user,1,1,1,1
+access_hr_hospital_sick,hr_hospital.sick,model_hr_hospital_sick,base.group_user,1,1,1,1
+access_hr_hospital_sick_type,hr_hospital.sick.type,model_hr_hospital_sick_type,base.group_user,1,1,1,1
+access_hr_hospital_personal_doctor_history,hr_hospital.personal.doctor.history,model_hr_hospital_personal_doctor_history,base.group_user,1,1,1,1
+access_hr_hospital_visit_to_doctor,hr_hospital.visit.to.doctor,model_hr_hospital_visit_to_doctor,base.group_user,1,1,1,1
+access_hr_hospital_research_type,hr_hospital.research.type,model_hr_hospital_research_type,base.group_user,1,1,1,1
+access_hr_hospital_research,hr_hospital.research,model_hr_hospital_research,base.group_user,1,1,1,1
+access_hr_hospital_sample_type,hr_hospital.sample.type,model_hr_hospital_sample_type,base.group_user,1,1,1,1
+access_hr_hospital_sample,hr_hospital.sample,model_hr_hospital_sample,base.group_user,1,1,1,1
+access_hr_hospital_set_doctor_wizard,hr_hospital.set.doctor.wizard,model_hr_hospital_set_doctor_wizard,base.group_user,1,1,1,1
+access_hr_hospital_sick_report_wizard,hr_hospital.sick.report.wizard,model_hr_hospital_sick_report_wizard,base.group_user,1,1,1,1
