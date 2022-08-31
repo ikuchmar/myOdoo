@@ -3,7 +3,7 @@ from odoo import models, fields
 
 class CGUHospitalDoctor(models.Model):
     _name = 'cgu_hospital.doctor'
-    _inherit = ['cgu_hospital.contact.mixin', ]
+    _inherit = ['cgu_hospital.contact.mixin', 'cgu_hospital.passport_data.mixin',]
     _description = 'Doctor'
 
     active = fields.Boolean(default=True)

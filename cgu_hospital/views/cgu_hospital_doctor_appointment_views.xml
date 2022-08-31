@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_window_doctor_appointments" model="ir.actions.act_window">
+        <field name="name">Doctor Appointments</field>
+        <field name="res_model">cgu_hospital.doctor.appointment</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="cgu_hospital.doctor_appointments" name="Doctor Appointments" parent="cgu_hospital.menu_documents"
+              action="cgu_hospital.action_window_doctor_appointments"/>
+
+</odoo>

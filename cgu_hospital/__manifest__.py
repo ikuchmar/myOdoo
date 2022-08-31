@@ -27,9 +27,14 @@
     'data': [
         'security/ir.model.access.csv',
         'views/cgu_hospital_menu.xml',
+        'views/cgu_hospital_analysis_direction_views.xml',
+        'views/cgu_hospital_analysis_result_views.xml',
+        'views/cgu_hospital_analysis_type_views.xml',
+        'views/cgu_hospital_doctor_appointment_views.xml',
         'views/cgu_hospital_doctor_views.xml',
+        'views/cgu_hospital_patient_views.xml',
         'views/cgu_hospital_speciality_views.xml',
-        # 'views/hr_hospital_patient_views.xml',
+
         # 'views/hr_hospital_visit_to_doctor_views.xml',
         # 'views/hr_hospital_diagnosis_views.xml',
         #

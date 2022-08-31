@@ -1,5 +1,5 @@
 from . import cgu_hospital_analysis_direction
-from . import cgu_hospital_analysis_resalt
+from . import cgu_hospital_analysis_result
 from . import cgu_hospital_analysis_type
 from . import cgu_hospital_contact_mixin
 from . import cgu_hospital_pasport_data_mixin

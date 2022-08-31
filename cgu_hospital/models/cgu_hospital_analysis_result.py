@@ -2,7 +2,7 @@ from odoo import models, fields, api
 
 
 class CGUHospitalAnalysisResalt(models.Model):
-    _name = 'cgu_hospital.analysis.resalt'
+    _name = 'cgu_hospital.analysis.result'
     _description = 'Analysis Resalt'
 
     date = fields.Date()

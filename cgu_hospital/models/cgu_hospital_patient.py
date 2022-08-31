@@ -9,11 +9,6 @@ class CGUHospitalPatient(models.Model):
 
     active = fields.Boolean(default=True)
 
-    # контактна особа(contact person) (res.partner)
-    contact_person_id = fields.Many2one(
-        comodel_name='cgu_hospital.contact.person',
-        string='contact person')
-    # Персональний лікарь(Personal doctor)
     personal_doctor_id = fields.Many2one(
         comodel_name='cgu_hospital.doctor',
         string='Personal doctor')
