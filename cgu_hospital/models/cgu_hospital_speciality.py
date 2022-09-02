@@ -1,6 +1,5 @@
 from odoo import models, fields
 
-
 class CGUHospitalSpecialty(models.Model):
     _name = 'cgu_hospital.speciality'
     _description = 'speciality'

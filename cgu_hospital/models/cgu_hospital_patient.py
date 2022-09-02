@@ -4,7 +4,7 @@ from dateutil.relativedelta import relativedelta
 
 class CGUHospitalPatient(models.Model):
     _name = 'cgu_hospital.patient'
-    _inherit = ['cgu_hospital.contact.mixin', ]
+    _inherit = ['cgu_hospital.contact.mixin', 'cgu_hospital.passport_data.mixin',]
     _description = 'Patient'
 
     active = fields.Boolean(default=True)

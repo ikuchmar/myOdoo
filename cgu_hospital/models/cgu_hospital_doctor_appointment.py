@@ -6,12 +6,13 @@ class CGUHospitalDoctorAppointment(models.Model):
     _description = 'Doctor Appointment'
 
     name = fields.Char()
+    # readonly = True
     active = fields.Boolean(default=True)
+
+    color = fields.Integer()
 
     date = fields.Date()
     time = fields.Datetime()
-
-    state = fields.Integer()
 
     doctor_id = fields.Many2one(
         comodel_name='cgu_hospital.doctor',
@@ -19,15 +20,16 @@ class CGUHospitalDoctorAppointment(models.Model):
 
     patient_id = fields.Many2one(
         comodel_name='cgu_hospital.patient',
-        string='patient')
+        string='Patient')
+
+
+    description = fields.Text(string='Description')
 
     # # діагноз
     # diagnosis_id = fields.Many2one(
     #     comodel_name='hr_hospital.diagnosis',
     #     string='diagnosis')
     #
-    # # рекомендації
-    # recommendations = fields.Text()
     #
     # research_ids = fields.Many2many(
     #     string="Researchs",
@@ -37,6 +39,6 @@ class CGUHospitalDoctorAppointment(models.Model):
     #     column2='research_id'
     # )
 
-    @api.onchange('patient_id', 'doctor_id', 'doctor_id', 'date_visit')
+    @api.onchange('patient_id', 'doctor_id', 'date')
     def _onchange_name(self):
         self.name = f'{self.patient_id.name} | {self.doctor_id.name} ({self.date})'

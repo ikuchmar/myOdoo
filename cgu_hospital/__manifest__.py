@@ -25,6 +25,7 @@
 
     # always loaded
     'data': [
+        'security/cgu_hospital_groups.xml',
         'security/ir.model.access.csv',
         'views/cgu_hospital_menu.xml',
         'views/cgu_hospital_analysis_direction_views.xml',
@@ -34,21 +35,15 @@
         'views/cgu_hospital_doctor_views.xml',
         'views/cgu_hospital_patient_views.xml',
         'views/cgu_hospital_speciality_views.xml',
-
-        # 'views/hr_hospital_visit_to_doctor_views.xml',
-        # 'views/hr_hospital_diagnosis_views.xml',
-        #
-        # 'views/hr_hospital_sick_views.xml',
-        # 'views/hr_hospital_research_views.xml',
-        # 'views/hr_hospital_personal_doctor_history_views.xml',
-        # # 'views/templates.xml',
-        # 'wizard/hr_hospital_set_doctor_wizard_views.xml',
-        # 'wizard/hr_hospital_sick_report_wizard_views.xml',
-        # 'report/hr_hospital_doctor_report.xml',
-        # 'report/hr_hospital_doctor_reports_template.xml',
+        'report/cgu_hospital_analysis_direction_report.xml',
+        'report/cgu_hospital_analysis_direction_report_template.xml',
+        'wizard/cgu_hospital_set_doctor_wizard_views.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
-        # 'demo/demo.xml',
+        'data/cgu_hospital_speciality_demo.xml',
+        'data/cgu_hospital_analysis_type_demo.xml',
+        'data/cgu_hospital_doctor_demo.xml',
+        'data/cgu_hospital_patient_demo.xml',
     ],
 }

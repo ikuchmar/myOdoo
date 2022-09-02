@@ -6,6 +6,7 @@ class CGUHospitalContactMixin(models.AbstractModel):
     _description = 'Contact mixin'
 
     name = fields.Char(string='Full name')
+    # readonly = True
 
     LastName = fields.Char(string='Last Name')
     FirstName = fields.Char(string='First Name')
