@@ -10,7 +10,7 @@
 
         <record id="group_hospital_user" model="res.groups">
             <field name="name">User</field>
-            <field name="category_id" ref="category_cgu_hospital"/>
+            <field name="category_id" ref="category_hospital"/>
             <field name="comment">Users of the cgu_hospital</field>
         </record>
 

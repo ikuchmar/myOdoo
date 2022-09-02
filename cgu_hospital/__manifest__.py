@@ -1,17 +1,22 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "cgu_hospital",
+    'name': "CGU Hospital",
 
     'summary': """
-        cgu_hospital Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Module CGU Hospital functionality:
+        #. Doctor Card
+        #. Patient card, with the appointment of the main doctor
+        #. Document Appointment to the doctor
+        #. Document Referral for analysis, with reference to Appointment with a doctor
+        #. Document Analysis results
+""",
 
     'description': """
         Long description of module's purpose
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': "Igor Kuchmar",
+    'website': "http://www.ikuchmar.com",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/15.0
@@ -27,6 +32,7 @@
     'data': [
         'security/cgu_hospital_groups.xml',
         'security/ir.model.access.csv',
+        'security/cgu_hospital_security.xml',
         'views/cgu_hospital_menu.xml',
         'views/cgu_hospital_analysis_direction_views.xml',
         'views/cgu_hospital_analysis_result_views.xml',

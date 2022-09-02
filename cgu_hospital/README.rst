@@ -1,9 +1,13 @@
 ==========================
-UA Odoo School: Lesson 6-6
+CGU Hospital
 ==========================
+Module CGU Hospital functionality:
 
-This module extends the functionality of sample modules for Odoo School UA, course 'Odoo Development Base' section 'Module formalization', and shows how to prepare a module for publishing on Odoo Apps.
-
+#. Doctor Card
+#. Patient card, with the appointment of the main doctor
+#. Document Appointment to the doctor
+#. Document Referral for analysis, with reference to Appointment with a doctor
+#. Document Analysis results
 
 Installation
 ============
@@ -41,9 +45,9 @@ Credits
 Authors
 -------
 
-* Garazd Creation
+* CGU
 
 Contributors
 ------------
 
-* Yurii Razumovskyi <support@garazd.biz>
+* Igor Kuchmar <ikuchmar@gmail.com>
