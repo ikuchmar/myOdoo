@@ -1,4 +1,4 @@
-from odoo import models, fields, api
+from odoo import models, fields
 
 
 class CGUHospitalAnalysisDirection(models.Model):
@@ -23,4 +23,3 @@ class CGUHospitalAnalysisDirection(models.Model):
         string='analysis.type')
 
     comment = fields.Text()
-

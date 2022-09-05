@@ -2,7 +2,11 @@
 <odoo>
 
     <!-- Top menu item -->
-    <menuitem id="cgu_hospital.menu_root" name="(CGU) Hospital"/>
+    <menuitem id="cgu_hospital.menu_root"
+              name="(CGU) Hospital"
+              active="True"
+              web_icon="cgu_hospital,static/description/icon.png"
+              sequence="111"/>
 
     <!-- menu categories -->
     <menuitem name="Directories" id="cgu_hospital.menu_directories" parent="cgu_hospital.menu_root"/>

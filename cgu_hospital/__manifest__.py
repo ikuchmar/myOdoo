@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 {
     'name': "CGU Hospital",
 
@@ -9,10 +8,12 @@
         #. Document Appointment to the doctor
         #. Document Referral for analysis, with reference to Appointment with a doctor
         #. Document Analysis results
-""",
+    """,
+    'license': 'LGPL-3',
 
     'description': """
-        Long description of module's purpose
+        Keeping records of doctors and patients, documents on doctor's appointments, analysis
+            appointments, analysis results
     """,
 
     'author': "Igor Kuchmar",

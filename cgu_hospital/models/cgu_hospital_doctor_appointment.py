@@ -22,7 +22,6 @@ class CGUHospitalDoctorAppointment(models.Model):
         comodel_name='cgu_hospital.patient',
         string='Patient')
 
-
     description = fields.Text(string='Description')
 
     # # діагноз

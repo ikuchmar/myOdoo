@@ -1,5 +1,5 @@
 from odoo import models, fields, api, _
-from dateutil.relativedelta import relativedelta
+
 
 class CGUHospitalContactMixin(models.AbstractModel):
     _name = 'cgu_hospital.contact.mixin'
@@ -22,8 +22,6 @@ class CGUHospitalContactMixin(models.AbstractModel):
         string='Sex',
         default='man')
 
-
     @api.onchange('LastName', 'FirstName', 'Surname')
     def _onchange_name(self):
         self.name = "%s %s %s" % (self.LastName, self.FirstName, self.Surname)
-

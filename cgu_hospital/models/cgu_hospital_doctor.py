@@ -1,4 +1,4 @@
-from odoo import models, fields, api
+from odoo import models, fields
 
 
 class CGUHospitalDoctor(models.Model):
@@ -27,6 +27,3 @@ class CGUHospitalDoctor(models.Model):
     #     comodel_name='hr_hospital.visit.to.doctor',
     #     inverse_name='doctor_id',
     #     string='patient_visit')
-
-
-

@@ -1,5 +1,4 @@
-from odoo import _, api, fields, models
-from odoo.exceptions import ValidationError
+from odoo import fields, models
 
 
 class HrHospitalSetDoctorForPatientsWizard(models.TransientModel):
@@ -9,7 +8,7 @@ class HrHospitalSetDoctorForPatientsWizard(models.TransientModel):
     patient_ids = fields.Many2many(
         string="patients",
         comodel_name='cgu_hospital.patient',
-        relation = 'set_doctor_wizard_rel'
+        relation='set_doctor_wizard_rel'
         # column2='patient_id'
         )
 
@@ -20,4 +19,3 @@ class HrHospitalSetDoctorForPatientsWizard(models.TransientModel):
     def action_set_personal_doctor(self):
         self.ensure_one()
         self.patient_ids.write({"personal_doctor_id": self.doctor_id.id})
-
